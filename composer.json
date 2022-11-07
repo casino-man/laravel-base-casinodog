@@ -16,8 +16,8 @@
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "wainwright/casino-dog-dev": "@dev",
-        "wainwright/casino-dog-operator-api-dev": "@dev",
+        "wainwright/casino-dog-dev": "*",
+        "wainwright/casino-dog-operator-api-dev": "*",
         "wainwright/panel": "^4.17"
     },
     "require-dev": {

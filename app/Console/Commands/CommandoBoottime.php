@@ -4,14 +4,14 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class CommandoUpdate extends Command
+class CommandoBoot extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'commando:envoy-update';
+    protected $signature = 'commando:boot';
 
     /**
      * The console command description.
@@ -27,7 +27,6 @@ class CommandoUpdate extends Command
      */
     public function handle()
     {
-
 
 
         return Command::SUCCESS;
