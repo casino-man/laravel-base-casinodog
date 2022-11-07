@@ -4,17 +4,25 @@
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "path",
+            "url": ".wainwright/*"
+        }
+    ],
     "require": {
         "php": "^8.0.2",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "wainwright/casino-dog": "dev-main",
-        "wainwright/casino-dog-operator-api": "dev-main"
+        "wainwright/casino-dog-dev": "@dev",
+        "wainwright/casino-dog-operator-api-dev": "@dev",
+        "wainwright/panel": "^4.17"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
+        "laravel/envoy": "^2.8",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
@@ -37,7 +45,8 @@
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
+            "@php artisan package:discover --no-ansi",
+	        "@php artisan commando:boot-time"
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
@@ -46,7 +55,7 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
-            "@php artisan key:generate --ansi"
+            "@php artisan key:generate --no-ansi"
         ]
     },
     "extra": {
