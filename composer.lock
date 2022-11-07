@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b325db42533d3de0cf28638fde716b55",
+    "content-hash": "045e53066b948e5e37d7c1aa331f629b",
     "packages": [
         {
             "name": "ably/ably-php",
@@ -5775,12 +5775,18 @@
             "time": "2022-03-08T17:03:00+00:00"
         },
         {
-            "name": "wainwright/casino-dog-dev",
-            "version": "dev-dev",
+            "name": "wainwright/casino-dog",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/casino-man/casinodog.git",
+                "reference": "1e00cdd67199bd68190e98c435e3bebb399e6c33"
+            },
             "dist": {
-                "type": "path",
-                "url": ".wainwright/casino-dog-dev",
-                "reference": "b6a4a231425b53b329d06a20393024589e55d415"
+                "type": "zip",
+                "url": "https://api.github.com/repos/casino-man/casinodog/zipball/1e00cdd67199bd68190e98c435e3bebb399e6c33",
+                "reference": "1e00cdd67199bd68190e98c435e3bebb399e6c33",
+                "shasum": ""
             },
             "require": {
                 "ably/ably-php-laravel": "^1.0.8",
@@ -5795,6 +5801,7 @@
                 "spatie/laravel-google-fonts": "^1.0",
                 "spatie/laravel-package-tools": "^1.13.5"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -5811,11 +5818,7 @@
                     "Wainwright\\CasinoDog\\": "src"
                 }
             },
-            "scripts": {
-                "post-update-cmd": [
-                    "@php artisan vendor:publish --tag=casino-dog-migrations"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5831,7 +5834,6 @@
             "keywords": [
                 "1x2gaming",
                 "bc.game",
-                "bc.game",
                 "betconstruct",
                 "betsson",
                 "bitstarz",
@@ -5846,7 +5848,6 @@
                 "hacksaw",
                 "hollywoodtv",
                 "isoftbet",
-                "isoftbet",
                 "microgaming",
                 "mondogaming",
                 "nextgen gaming",
@@ -5860,22 +5861,29 @@
                 "slotmachines",
                 "softswiss",
                 "stake.com",
-                "stake.com",
                 "the hub",
                 "upgaming",
                 "wainwright"
             ],
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/casino-man/casinodog/issues",
+                "source": "https://github.com/casino-man/casinodog/tree/main"
+            },
+            "time": "2022-11-07T16:15:57+00:00"
         },
         {
-            "name": "wainwright/casino-dog-operator-api-dev",
-            "version": "dev-dev",
+            "name": "wainwright/casino-dog-operator-api",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/casino-man/casino-dog-operator-api.git",
+                "reference": "e19c8061dd6ef87857798f07183a02c677a0ea79"
+            },
             "dist": {
-                "type": "path",
-                "url": ".wainwright/casino-dog-operator-api-dev",
-                "reference": "95fcaad6e3e6d0a06fedc68bf661e414d904cf62"
+                "type": "zip",
+                "url": "https://api.github.com/repos/casino-man/casino-dog-operator-api/zipball/e19c8061dd6ef87857798f07183a02c677a0ea79",
+                "reference": "e19c8061dd6ef87857798f07183a02c677a0ea79",
+                "shasum": ""
             },
             "require": {
                 "ably/ably-php-laravel": "^1.0.8",
@@ -5883,6 +5891,7 @@
                 "spatie/laravel-collection-macros": "^7.12.0",
                 "spatie/laravel-package-tools": "^1.13.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -5900,11 +5909,7 @@
                     "Wainwright\\CasinoDogOperatorApi\\Database\\Factories\\": "database/factories"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Wainwright\\CasinoDogOperatorApi\\Tests\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5918,13 +5923,15 @@
             "description": "Operator API package to communicate with master api.",
             "homepage": "https://github.com/wainwright/casino-dog-operator-api",
             "keywords": [
-                "Wainwright",
                 "casino-dog-operator-api",
-                "laravel"
+                "laravel",
+                "wainwright"
             ],
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/casino-man/casino-dog-operator-api/issues",
+                "source": "https://github.com/casino-man/casino-dog-operator-api/tree/main"
+            },
+            "time": "2022-11-07T17:05:26+00:00"
         },
         {
             "name": "webmozart/assert",
