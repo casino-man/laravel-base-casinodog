@@ -4,20 +4,14 @@
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
-    "repositories": [
-        {
-            "type": "path",
-            "url": ".wainwright/*"
-        }
-    ],
     "require": {
         "php": "^8.0.2",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "wainwright/casino-dog-dev": "@dev",
-        "wainwright/casino-dog-operator-api-dev": "@dev"
+        "wainwright/casino-dog": "*",
+        "wainwright/casino-dog-operator-api": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
