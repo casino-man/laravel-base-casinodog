@@ -1,0 +1,7 @@
+@setup
+    $now = new DateTime;
+@endsetup
+
+@task('deploy')
+    \Artisan::    Artisan::call("site:generate-sitemap"
+@endtask
