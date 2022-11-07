@@ -17,8 +17,7 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "wainwright/casino-dog-dev": "*",
-        "wainwright/casino-dog-operator-api-dev": "*",
-        "wainwright/panel": "^4.17"
+        "wainwright/casino-dog-operator-api-dev": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -43,8 +42,7 @@
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --no-ansi",
-	        "@php artisan commando:boot"
+            "@php artisan package:discover --no-ansi"
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --no-ansi --force"
