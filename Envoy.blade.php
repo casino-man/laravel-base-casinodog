@@ -6,5 +6,4 @@
 
 @task('deploy')
     php artisan queue:restart
-    php artisan casino-dog:install -y
 @endtask
