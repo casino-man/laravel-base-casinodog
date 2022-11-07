@@ -2,6 +2,7 @@
 /public/build
 /public/hot
 /public/storage
+composer.lock
 /storage/*.key
 /vendor
 /storage/installed
