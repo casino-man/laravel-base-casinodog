@@ -19,5 +19,5 @@ Route::get('/quickinstall', function () {
 });
 
 Route::get('/', function () {
-    return view('install');
+
 });
