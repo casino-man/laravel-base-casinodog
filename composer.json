@@ -5,13 +5,13 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^8.0.2",
+        "php": "^8.0.1",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.26",
         "laravel/sanctum": "^3.0",
         "wainwright/casino-dog": "*",
         "wainwright/casino-dog-operator-api": "*",
-	"wainwright/panel": "*"
+	    "wainwright/panel": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
